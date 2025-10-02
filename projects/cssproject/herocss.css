@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque; 
+    color: #222;              
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 18;
+  }
+  
+  #interest-title {
+    color: darkblue; 
+    text-align: center;
+  }
+  
+  #hero-title {
+    color: darkred; 
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: darkgreen;
+    margin-top: 30px;
+  }
+  
+  p {
+    color: #333; 
+  }
+  
+  .bigger {
+    font-size: 32pt; 
+  }
+  
+  .red {
+    color: crimson;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: crimson; 
+    font-weight: bold;
+  }
+
+  span {
+    font-style: italic;
+    color: rgb(124, 9, 9); 
+  }
+  
+
+  
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(19, 142, 119);
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  dt {
+    font-weight: bold;
+    color: darkblue;
+  }
+  
+  dd {
+    margin: 0 0 10px 20px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  

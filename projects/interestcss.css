@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque; 
+    color: #222;              
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  #interest-title {
+    color: rgb(51, 0, 139); 
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28pt;
+  }
+  
+  h2 {
+    color: rgb(7, 108, 7);
+    margin-top: 30px;
+  }
+  
+  p {
+    color: #333; 
+  }
+
+  .bigger {
+    font-size: 32pt; 
+  }
+  
+  .red {
+    color: crimson;
+    font-weight: bold;
+  }
+  
+  span {
+    font-style: italic;
+    color: rgb(124, 9, 9);
+  }
+  
+  .highlight {
+    color: red; 
+  }
+  
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: darkred;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
