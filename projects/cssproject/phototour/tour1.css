@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('ocean.jpg');
+  }
+  
+  nav {
+    background-color: #0e401d;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    display: block;
+    color: rgb(134, 143, 33);
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #512828;
+  }
+  
+  .navbar .active {
+    background-color: #064d65;
+  }
+  
+  /* Custom list with image bullets */
+  .tour-list {
+    list-style-image: url('flower.png'); /* Example bullet image */
+    padding-left: 30px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
