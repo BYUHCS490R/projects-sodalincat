@@ -53,3 +53,14 @@ body {
     border-radius: 8px;
   }
   
+  #homeimg {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    background: url("decorative.jpg");
+    background-repeat: no-repeat;
+  }
+
+  #title_con {
+    display: flex;
+  }
