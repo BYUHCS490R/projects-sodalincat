@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: aqua;
+    padding: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+}
+nav{
+    border: thin solid;
+    padding: 15px;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+
+}
+main p{
+    border: thin;
+    padding: 5px 10px 20px 50px;
+}
+
+header h1{
+    background-color: brown;
+
+}
+main h1{
+   border:thin;
+   width: 50px;
+
+}

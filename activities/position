@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <header> 
+        <h1> Web design site </h1>
+        <nav>
+            Link Link Link
+        </nav>
+    </header>
+    <main>
+        <h1> Box Model </h1>
+        <p> Block tags take up the full width and start on a new line, while inline tags only take up needed space and stay within the same line.
+        </p>
+        <p> Margin is space outside an element, border surrounds it, and padding is space between the element’s content and its border.</p>
+        <p> CSS uses units like pixels (px), percentages (%), em, rem, viewport width (vw), and viewport height (vh) for sizing and spacing elements.</p>
+        <p> Use a figure tag to group images, charts, or diagrams with their captions, making them easier to reference and more meaningful for accessibility.</p>
+    
+    </main>
+    <footer>
+    
+        <p> &copy; Sodalin 2025 </p>
+    </footer>
+</body>
+</html>
