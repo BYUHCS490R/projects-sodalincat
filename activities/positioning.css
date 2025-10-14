@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 300px; /*move content below our navigation */
+}
+.sunset{
+    border: thick solid black;
+    width: 300px;
+    float: left;
+
+}
+
+.floater{
+    float: left;
+}
+.hammer{
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    margin: 0;
+    z-index: 10;
+    display: none;
+}
+
+/*.hammer{
+    position: relative;
+    bottom: 20px;
+    left: -300px
+}*/
+
+.sunset img{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
