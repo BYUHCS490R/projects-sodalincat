@@ -1,0 +1,121 @@
+/* Wrapper */
+#wrapper {
+    width: 850px;
+    margin: 20px auto;
+    background-color: #fdf7e4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-image: url('ocean-bg.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    color: rgb(19, 13, 13);
+    text-align: center;
+    padding: 30px 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header h2 {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    margin: 5px 0 0 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #007b8a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #007b8a;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+
+/* Float image to the left */
+.floater {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 300px;
+}
+
+.floater img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #007b8a;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #054547;
+    margin-top: 5px;
+}
+
+/* Headings in main */
+main h3 {
+    color: #007b8a;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-image: url('footer-bg.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    text-align: center;
+    padding: 15px;
+    color: rgb(6, 52, 20);
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Paragraph box model */
+main p {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
