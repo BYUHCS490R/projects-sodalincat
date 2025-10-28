@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive1.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
     <header>
@@ -23,9 +24,9 @@
             <p>
                 1.Viewport meta tag important because it makes web pages look good on all devices. It controls how a page fits the screen size, especially on phones and tablets for better viewing.
             </p>
-            <p> 2. We can adjust the CSS for printing by using a special CSS rule like @media print to change layout, hide menus or colors, and make the page clean and easy to read on paper.
+            <p> 2. The CSS rule that appears last in the code takes priority. So, if “flex-direction: row;” is written after “column;”, the layout will follow the row direction.
             </p>
-            <p> 3. We can adjust CSS for printing when users need to print reports, receipts, or articles, so the printed version looks clear, simple, and without unnecessary web elements.</p>
+            <p> 3. Use CSS media queries like @media (max-width: 600px) to apply specific styles for phones. This helps adjust layouts, text, and images for smaller screens.</p>
         </aside>
 
         <main>

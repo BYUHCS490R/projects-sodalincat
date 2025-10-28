@@ -52,8 +52,10 @@ nav a:hover {
 }
 
 main {
-    flex: 1;
-    padding: 15px;
+    width: 100%;
+    align-items: center;
+    /* flex: 1;
+    padding: 15px; */
 }
 
 main h2 {
