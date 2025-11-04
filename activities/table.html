@@ -12,22 +12,27 @@
     </header>
     <main>
         <h1> Tables </h1>
+        <table class="Schedule">
         <table border="1">
             <caption> My Class Schedule </caption>
             <thead>
             <tr>
                 
                 <th> Deapartment </th>
-                <th> Number </th>
+                <th> Number </th> 
                 <th> Title </th>
                 <th> Time </th>
                 <th> Location </th>
                 <th> Credits </th>
             </tr>
-            <th colspan="6"> Fall 2025 
-
-            </th>
             <tr>
+            <th colspan="6"> Fall 2025 
+            <tr>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
                 <td> CS </td>
                 <td>140 </td>
                 <td> Web Design </td>
@@ -51,16 +56,17 @@
                 <td> P3 </td>
                 <td> 3 </td>
             </tr>
-            <tr> 
+            </tbody>
+            <tfoot>
                 <th colspan="5" id="total-credits"> total Credit</th>
                 <td headers="total-credits"> 12 </td>
             </tr>
+            </tfoot>
         </table>
     </main>
     <footer>
-        <p>1. Use a table when you need to show data or information that is best seen in rows and columns, like schedules, comparisons, or statistics. </p>
-        <p>2. Do not use a table for long text, lists, or layouts. Use tables only when data clearly fits into rows and columns, not for decoration. </p>
-        <p>3. We need extra work when making tables for screen readers. Add captions, headers, and clear labels so people with disabilities can understand the table easily.</p>
+        <p>1. We don’t use the border attribute because it’s outdated. Instead, we use CSS to style tables. CSS gives more control, cleaner code, and better webpage design. </p>
+        <p>2. The easiest way is using CSS :nth-child() selector. It lets you automatically color every other row differently, making tables easier to read without manually styling each row.</p>
         &copy; Sodalin 2025
     </footer>
     
