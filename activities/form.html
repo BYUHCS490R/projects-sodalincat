@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header> 
+        <h1> Sodalin Web Design</h1>
+    </header>
+    <main>
+        <h1> Forms </h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="fname"> Full Name:</label>
+                <input type="text" name="fullname" placeholder="Full Name"id="fname">
+            </div>
+            <div>
+                <label for="fname"> Email:</label>
+                <input type="email" name="fullname"value="your@gmail.com"id="fname">
+            </div>
+            <div>
+                <label for="pass"> Password </label>
+                <input type="password" placeholder="password"id="pass">
+            </div>
+            <div>
+                <label for="state"> State: </label>
+                <select name="state" id="state">
+                    <option value="blank">---- </option>
+                    <option value="CA"> California</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT"> Utah </option>
+                </select>
+            </div>
+            <div> 
+                <label><input type="checkbox" checked> I agree to the terms </label>
+            </div>
+            <div>
+                Gender
+                <label><input type="radio" name="male"> Male</label>
+                <label><input type="radio" name="female"> Female</label>
+            </div>
+            <div>
+                <label for="comment"> Comments: </label>
+                <textarea name="comment" id="comment">
+
+                </textarea>
+            </div>
+           
+            <input type="submit" value="sign up">
+        </form>
+    </main>
+    <footer>
+        <p>1. The "action" tells where the form data goes after you click submit, like sending it to a webpage or server to be handled. </p>
+        <p> 2. The "method" shows how the form sends data, like using “GET” or “POST” when you submit it.</p>
+        <p> 3. “GET” puts data in the web link where people can see it. “POST” hides the data and sends it safely to the server.</p>
+        &copy; Sodalin | 2025
+    </footer>
+    
+</body>
+</html>
