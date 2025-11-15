@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="processing.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Web Design</h1>
+</header>
+
+<main>
+    <form id="myForm">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+
+            <div class="form-row">
+                <label for="password">BYUH ID:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+            </div>
+
+            <div class="gender-row">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="interest">Select Interest:</label>
+                <select id="interest" name="interest">
+                    <option>Web Design</option>
+                    <option>Networking</option>
+                    <option>Programming</option>
+                    <option>Cybersecurity</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="agree"> I agree to the terms
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Submit">
+            </div>
+            <p> 1. JavaScript is a programming language that makes websites do things (like buttons, menus, slides). It got its name because it was created when another language called Java was very popular, so they named it “JavaScript” to attract people.</p> <p> 2. We can run JavaScript in the browser (like Chrome, Firefox) and on the computer/server using Node.js.</p> <p> 3. For a long time, jQuery was the most popular.</p> <p> 4. Today, React is the most popular front-end JavaScript library.</p>
+
+        </fieldset>
+
+    </form>
+</main>
+
+<footer>
+    &copy; Sodalin | 2025
+</footer>
+
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const fullname = document.getElementById('fullname').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const age = document.getElementById('age').value;
+
+    if (!fullname || !email) {
+        alert('Please enter your full name and email.');
+        return;
+    }
+
+    if (!age || age < 18) {
+        alert("You must be 18 or older.");
+        return;
+    }
+
+    const formData = {
+        name: fullname,
+        email: email,
+        password: password,
+        age: age
+    };
+
+    alert("Form Submitted Successfully!");
+    console.log(formData);
+});
+</script>
+
+</body>
+</html>
