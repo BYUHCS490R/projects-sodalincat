@@ -14,6 +14,7 @@
 </header>
 
 <main>
+    <div id="message"></div>
     <form id="myForm">
 
         <fieldset>
@@ -73,7 +74,8 @@
                 <div class="spacer"></div>
                 <input type="submit" value="Submit">
             </div>
-            <p> 1. JavaScript is a programming language that makes websites do things (like buttons, menus, slides). It got its name because it was created when another language called Java was very popular, so they named it “JavaScript” to attract people.</p> <p> 2. We can run JavaScript in the browser (like Chrome, Firefox) and on the computer/server using Node.js.</p> <p> 3. For a long time, jQuery was the most popular.</p> <p> 4. Today, React is the most popular front-end JavaScript library.</p>
+            <p> 1. AJAX is a technique that lets webpages send or receive data from a server without refreshing. It helps update parts of a page instantly, making websites faster, smoother, and more interactive.</p>
+            <p> 2. Putting JavaScript in a separate file keeps your HTML cleaner, makes the code easier to manage, allows reuse on multiple pages, improves loading speed through caching, and follows good organizing practices.</p>
 
         </fieldset>
 
@@ -84,36 +86,7 @@
     &copy; Sodalin | 2025
 </footer>
 
-<script>
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const fullname = document.getElementById('fullname').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const age = document.getElementById('age').value;
-
-    if (!fullname || !email) {
-        alert('Please enter your full name and email.');
-        return;
-    }
-
-    if (!age || age < 18) {
-        alert("You must be 18 or older.");
-        return;
-    }
-
-    const formData = {
-        name: fullname,
-        email: email,
-        password: password,
-        age: age
-    };
-
-    alert("Form Submitted Successfully!");
-    console.log(formData);
-});
-</script>
+<script src="form.js"></script>
 
 </body>
 </html>
