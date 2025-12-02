@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+<header>
+  <h1>Exploring Cambodian Culture</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Cambodian Food</a></li>
+      <li><a href="places.html">Famous Places</a></li>
+      <li><a href="clothing.html">Traditional Clothing</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Contact Me</h2>
+    <p>
+      Use this form if you have questions or if you want to learn more about a part of Cambodian culture.
+    </p>
+  </section>
+
+  <section>
+    <form id="contactForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country">
+
+      <label for="topic">What topic do you want to learn more about?</label>
+      <select id="topic" name="topic">
+        <option value="food">Food</option>
+        <option value="places">Famous Places</option>
+        <option value="clothing">Traditional Clothing</option>
+        <option value="festivals">Festivals</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+
+    <p id="thankYouMessage" style="display:none; margin-top:1rem;">
+      Thank you for your message! I will look at your question soon.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Sodalin | Exploring Cambodian Culture</p>
+</footer>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // stop real submit
+    form.reset();           // clear the form
+    form.style.display = 'none'; // hide form after submit
+    thankYou.style.display = 'block'; // show thank-you text
+  });
+</script>
+</body>
+</html>
